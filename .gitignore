@@ -1,0 +1,59 @@
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter / IPython ──────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Data files (large CSVs — don't commit raw data or predictions to git) ──────
+data/
+*.csv
+!src/**/*.csv
+
+# ── Model outputs / artifacts ──────────────────────────────────────────────────
+outputs/
+*.json
+!src/**/*.json
+
+# ── macOS junk ─────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# ── IDE / Editor ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Kaggle credentials (NEVER commit these) ────────────────────────────────────
+kaggle.json
+.kaggle/
+
+# ── Optuna / experiment DBs ────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── CatBoost training artifacts ────────────────────────────────────────────────
+catboost_info/
+
+# ── Logs ───────────────────────────────────────────────────────────────────────
+*.log
+logs/
